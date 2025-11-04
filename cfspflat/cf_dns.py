@@ -12,7 +12,7 @@ class CFzone:
         api_email = os.environ.get('CLOUDFLARE_EMAIL')
         api_key = os.environ.get('CLOUDFLARE_API_KEY')
         api_token = os.environ.get('CLOUDFLARE_API_TOKEN')
-        cf_file = Path('.cloudflare.cf')
+        cf_file = Path('.cloudflare.cfg')
         if (not cf_file.exists()):
             cf_file = Path.home().joinpath(cf_file)
         if (cf_file.exists()):
